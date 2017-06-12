@@ -69,6 +69,9 @@
                     You can manage the jobs on this site!
                 </sec:ifAllGranted>
             </p>
+            <div><s:top type="publishers" /></div>
+            <div><s:top type="tags" /></div>
+            <div><s:top type="types" /></div>
             <p>
                 Below is a list of controllers that are currently deployed in this application, click on each to execute its default action:
             </p>

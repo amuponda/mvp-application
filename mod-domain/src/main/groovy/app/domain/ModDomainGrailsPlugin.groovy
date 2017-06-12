@@ -1,4 +1,4 @@
-package mod.domain
+package app.domain
 
 import grails.plugins.*
 
