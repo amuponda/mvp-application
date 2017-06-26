@@ -20,12 +20,12 @@ class Job {
     static hasMany = [tags: Tag]
 
     static constraints = {
-        title blank: false
-        description blank: false, type: 'text'
+        title nullable: false, blank: false
+        description nullable: false, blank: false, type: 'text'
         jobUrl blank: false
-        contactEmail blank: false, email: true
-        applyInstructions blank: false
-        salaryEstimate blank: true, size: 10..100 * 1024
+        contactEmail nullable: false, blank: false, email: true
+        applyInstructions nullable: false, blank: false
+        salaryEstimate nullable: true, blank: true, size: 10..100 * 1024
         active defaultValue: false
         expirationDate nullable: true
         remote nullable: true
